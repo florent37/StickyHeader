@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical
+"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/autoAttach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. auto attach"/>
+
+    <Button
+        android:id="@+id/toBeAttached"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. to be attached"/>
+
+    <Button
+        android:id="@+id/parentadapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. with parent adapter"/>
+
+</LinearLayout>
