@@ -5,6 +5,21 @@ import androidx.recyclerview.widget.RecyclerView
 
 class StickyHeader {
 
+    companion object {
+        fun setupWith(recyclerView: RecyclerView, adapter: StickyHeader.Adapter<*>) : StickyHeader {
+            return StickyHeader().apply {
+                withAdapter(adapter)
+                attachTo(recyclerView)
+            }
+        }
+        fun setupWith(recyclerView: RecyclerView, adapter: StickyRecyclerAdapter<*>) : StickyHeader {
+            return StickyHeader().apply {
+                withAdapter(adapter)
+                attachTo(recyclerView)
+            }
+        }
+    }
+
     private var itemDecoration : StickyHeaderItemDecoration<*>? = null
 
     fun <VH: RecyclerView.ViewHolder> withAdapter(adapter: StickyHeader.Adapter<VH>) : StickyHeader {

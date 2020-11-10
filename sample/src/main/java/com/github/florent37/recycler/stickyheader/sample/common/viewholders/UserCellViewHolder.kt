@@ -1,10 +1,10 @@
-package com.github.florent37.recycler.stickyheader.sample.adapter
+package com.github.florent37.recycler.stickyheader.sample.common.viewholders
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.github.florent37.recycler.stickyheader.sample.R
-import com.github.florent37.recycler.stickyheader.sample.model.User
+import com.github.florent37.recycler.stickyheader.sample.common.model.User
 
 class UserCellViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

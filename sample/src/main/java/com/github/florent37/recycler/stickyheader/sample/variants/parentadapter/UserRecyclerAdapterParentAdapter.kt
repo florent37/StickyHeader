@@ -1,15 +1,17 @@
-package com.github.florent37.recycler.stickyheader.sample.adapter
+package com.github.florent37.recycler.stickyheader.sample.variants.parentadapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.github.florent37.recycler.stickyheader.StickyRecyclerAdapter
 import com.github.florent37.recycler.stickyheader.sample.R
-import com.github.florent37.recycler.stickyheader.sample.model.User
-import com.github.florent37.recycler.stickyheader.sample.model.UserHeader
-import com.github.florent37.recycler.stickyheader.sample.model.UserModel
+import com.github.florent37.recycler.stickyheader.sample.common.viewholders.HeaderViewHolder
+import com.github.florent37.recycler.stickyheader.sample.common.viewholders.UserCellViewHolder
+import com.github.florent37.recycler.stickyheader.sample.common.model.User
+import com.github.florent37.recycler.stickyheader.sample.common.model.UserHeader
+import com.github.florent37.recycler.stickyheader.sample.common.model.UserModel
 
-class SimpleUserRecyclerAdapter : StickyRecyclerAdapter<RecyclerView.ViewHolder>() {
+class UserRecyclerAdapterParentAdapter : StickyRecyclerAdapter<RecyclerView.ViewHolder>() {
 
     companion object {
         const val TYPE_CELL = 1

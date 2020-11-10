@@ -1,31 +1,21 @@
-package com.github.florent37.recycler.stickyheader.sample.adapter
+package com.github.florent37.recycler.stickyheader.sample.variants.tobeattached
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.github.florent37.recycler.stickyheader.StickyHeader
 import com.github.florent37.recycler.stickyheader.sample.R
-import com.github.florent37.recycler.stickyheader.sample.model.User
-import com.github.florent37.recycler.stickyheader.sample.model.UserHeader
-import com.github.florent37.recycler.stickyheader.sample.model.UserModel
+import com.github.florent37.recycler.stickyheader.sample.common.viewholders.HeaderViewHolder
+import com.github.florent37.recycler.stickyheader.sample.common.viewholders.UserCellViewHolder
+import com.github.florent37.recycler.stickyheader.sample.common.model.User
+import com.github.florent37.recycler.stickyheader.sample.common.model.UserHeader
+import com.github.florent37.recycler.stickyheader.sample.common.model.UserModel
 
-class UserRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), StickyHeader.Adapter<RecyclerView.ViewHolder> {
+class UserRecyclerAdapterToBeAttached : RecyclerView.Adapter<RecyclerView.ViewHolder>(), StickyHeader.Adapter<RecyclerView.ViewHolder> {
 
     companion object {
         const val TYPE_CELL = 1
         const val TYPE_HEADER = 2
-    }
-
-    private val stickyHeader = StickyHeader().withAdapter(this)
-
-    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
-        super.onAttachedToRecyclerView(recyclerView)
-        stickyHeader.attachTo(recyclerView)
-    }
-
-    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
-        super.onDetachedFromRecyclerView(recyclerView)
-        stickyHeader.detachFrom(recyclerView)
     }
 
     var items = listOf<UserModel>()
